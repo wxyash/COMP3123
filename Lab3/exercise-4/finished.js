@@ -11,7 +11,7 @@ var handleCounter = function (err, counter, waitTime, timeStamp) {
     }
 }
 var callBackWait = function (counter, callback) {
-        let randomWaitTime = getRandomInt(0,5000)
+        let randomWaitTime = getRandomInt(5000,10000)
         setTimeout(function () {
         callback(null, counter, randomWaitTime/1000+ 's', + new Date())
         } ,randomWaitTime)
